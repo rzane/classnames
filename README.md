@@ -4,7 +4,7 @@ A simple utility for conditionally joining class names together.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The package can be installed as:
 
 ```elixir
 def deps do
