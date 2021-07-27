@@ -1,4 +1,4 @@
-# Classnamee
+# Classnames
 
 A simple utility for conditionally joining class names together.
 
