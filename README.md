@@ -45,3 +45,22 @@ defmodule MyApp.Web do
   end
 end
 ```
+
+## Alternatives
+
+If you are using the new(er) Heex template files, this dependency may not be necessary, as the `class` attribute in `Phoenix.HTML.Form` elements also accepts a list (of strings/atoms) and already filters values that are `nil` or `false`. So with that in mind instead of
+
+```elixir
+class = classnames([
+  "foo": 1 + 1 == 2,
+  bar: 1 == 0
+])
+```
+You can just as easily reverse the condition/class name and write
+
+```elixir
+class = [
+  1 + 1 == 2 and "foo",
+  1 == 0 and :bar
+]
+```
